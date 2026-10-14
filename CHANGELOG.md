@@ -9,6 +9,8 @@ Pre-1.0 releases may introduce breaking changes in minor versions
 
 ## [Unreleased]
 
+- Native Guest runtime candidates use a patched Debian 13 userspace while preserving the exact pinned bubblewrap 0.8 and Codex sandbox contract. Candidate publication still requires a passing vulnerability scan, signature verification and live acceptance before installation.
+
 - **Audit chart selections clear when the same bar is selected again (#3094).** The chart and table retain the chosen time-window anchor while activity loads or filters change, so incoming samples no longer shift a relative bucket beneath the selection.
 
 - **A temporarily missing workspace no longer silently switches context or discards a draft (#3083).** Retry preserves the selected workspace and local draft while content and workspace requests remain unavailable; choosing another workspace uses the existing unsaved-change confirmation.
